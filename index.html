@@ -1,62 +1,45 @@
-/* Reset globale e box-sizing */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+<!DOCTYPE html><html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="video-section">
+            <video controls>
+                <source src="assets/reel.mp4" type="video/mp4">
+                Il tuo browser non supporta il video.
+            </video>
+        </section><section class="portfolio-section">
+        <img src="assets/0001.jpg" alt="Pagina 1">
+        <img src="assets/0002.jpg" alt="Pagina 2">
+        <img src="assets/0003.jpg" alt="Pagina 3">
+        <img src="assets/0004.jpg" alt="Pagina 4">
+        <img src="assets/0005.jpg" alt="Pagina 5">
+        <img src="assets/0006.jpg" alt="Pagina 6">
+        <img src="assets/0007.jpg" alt="Pagina 7">
+        <img src="assets/0008.jpg" alt="Pagina 8">
+        <img src="assets/0009.jpg" alt="Pagina 9">
+        <img src="assets/0010.jpg" alt="Pagina 10">
+        <img src="assets/0011.jpg" alt="Pagina 11">
+        <img src="assets/0012.jpg" alt="Pagina 12">
+        <img src="assets/0013.jpg" alt="Pagina 13">
+        <img src="assets/0014.jpg" alt="Pagina 14">
+        <img src="assets/0015.jpg" alt="Pagina 15">
+        <img src="assets/0016.jpg" alt="Pagina 16">
+        <img src="assets/0017.jpg" alt="Pagina 17">
+        <img src="assets/0018.jpg" alt="Pagina 18">
+        <img src="assets/0019.jpg" alt="Pagina 19">
+        <img src="assets/0020.jpg" alt="Pagina 20">
+        <img src="assets/0021.jpg" alt="Pagina 21">
+        <img src="assets/0022.jpg" alt="Pagina 22">
+        <img src="assets/0023.jpg" alt="Pagina 23">
+        <img src="assets/0024.jpg" alt="Pagina 24">
+        <img src="assets/0025.jpg" alt="Pagina 25">
+    </section>
+</main>
 
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;  /* blocca scroll orizzontale */
-  width: 100%;
-  font-family: Arial, sans-serif;
-}
-
-main {
-  max-width: 1200px;    /* limite massimo alla larghezza del sito */
-  margin: 0 auto;       /* centro la pagina */
-  padding: 10px;
-  width: 100%;
-}
-
-.video-section video {
-  width: 100%;
-  height: auto;
-  max-height: 60vh;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.portfolio-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-}
-
-.portfolio-section img {
-  flex-shrink: 0;                  /* evita che si riducano troppo */
-  width: calc(20% - 10px);        /* 5 immagini per riga meno gap */
-  height: auto;
-  object-fit: cover;
-  border-radius: 4px;
-  transition: transform 0.3s ease;
-  display: block;
-}
-
-.portfolio-section img:hover {
-  transform: scale(1.05);
-}
-
-/* Media queries per schermi piccoli */
-@media (max-width: 768px) {
-  .portfolio-section img {
-    width: calc(33.33% - 10px);   /* 3 immagini per riga */
-  }
-}
-
-@media (max-width: 480px) {
-  .portfolio-section img {
-    width: calc(50% - 10px);      /* 2 immagini per riga */
-  }
-}
+</body>
+</html>
