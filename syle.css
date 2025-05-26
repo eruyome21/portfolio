@@ -64,3 +64,11 @@ main {
     max-width: none;
   }
 }
+.video-section video {
+  width: 100%;
+  max-width: 800px; /* limita la larghezza massima */
+  height: auto;
+  max-height: 60vh;
+  display: block;
+  margin: 0 auto 20px;
+}
