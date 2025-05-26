@@ -18,10 +18,17 @@ img, video {
   box-sizing: border-box;
   background-color: white;
 }
+
 .video-section video {
   display: block;       
   margin: 0 auto;  
   max-width: 90%;   
   height: auto;       
   border-radius: 8px; 
+}
+
+.portfolio-section img {
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  box-sizing: border-box; 
 }
