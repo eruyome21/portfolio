@@ -37,12 +37,13 @@ main {
 
 /* Immagini del portfolio */
 .portfolio-section img {
-  width: calc(20% - 10px);
-  max-width: 100%;
+  width: calc(15% - 10px);
+  max-width: 250px;
   height: auto;
   object-fit: cover;
   border-radius: 4px;
   transition: transform 0.3s ease;
+  border: none; /* rimosso bordo rosso */
 }
 
 .portfolio-section img:hover {
@@ -53,17 +54,13 @@ main {
 @media (max-width: 768px) {
   .portfolio-section img {
     width: calc(33.33% - 10px);
+    max-width: none;
   }
 }
 
 @media (max-width: 480px) {
   .portfolio-section img {
     width: calc(50% - 10px);
+    max-width: none;
   }
-}
-.portfolio-section img {
-  border: 1px solid red;
-}
-.portfolio-section img {
-  border: 1px solid red;
 }
