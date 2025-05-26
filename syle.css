@@ -24,12 +24,13 @@ main {
   max-width: 900px;
   border: none;
   outline: none;
+  margin: 40px 0;
 }
 
 .portfolio-section img {
   width: 90%;
   max-width: 900px;
-  margin: 10px 0;
+  margin: 40px 0;
   box-sizing: border-box;
   display: block;
 }
@@ -41,6 +42,6 @@ main {
 
   .portfolio-section img {
     width: 100%;
-    margin: 10px 0;
+    margin: 40px 0;
   }
 }
