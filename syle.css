@@ -12,18 +12,27 @@ body, html {
 
 main {
   width: 100%;
-  max-width: 100vw; /* Limita la larghezza massima alla viewport */
+  max-width: 960px; /* Limito la larghezza massima del contenuto */
   margin: 0 auto;
   padding: 10px;
 }
 
 /* Sezione video */
+.video-section {
+  max-width: 100%;       /* Occupa tutta la larghezza di main */
+  margin: 0 auto 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
 .video-section video {
   width: 100%;
   height: auto;
-  max-height: 60vh;
+  max-height: 300px;      /* Altezza max più contenuta */
   display: block;
-  margin: 0 auto 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  object-fit: contain;
 }
 
 /* Sezione portfolio */
@@ -32,7 +41,8 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  max-width: 100vw; /* Assicura che la sezione non superi la larghezza della finestra */
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* Immagini del portfolio */
@@ -43,7 +53,7 @@ main {
   object-fit: cover;
   border-radius: 4px;
   transition: transform 0.3s ease;
-  border: none; /* rimosso bordo rosso */
+  border: none;
 }
 
 .portfolio-section img:hover {
@@ -63,18 +73,4 @@ main {
     width: calc(50% - 10px);
     max-width: none;
   }
-}
-.video-section {
-  max-width: 960px;      /* stessa max-width del main o simile */
-  margin: 0 auto 20px;   /* centra la sezione e spazio sotto */
-  padding: 0 10px;       /* un po’ di padding ai lati */
-}
-
-.video-section video {
-  width: 100%;           /* occupa tutta la larghezza disponibile */
-  height: auto;          /* mantiene le proporzioni */
-  max-height: 400px;     /* altezza massima più ragionevole */
-  display: block;
-  border-radius: 4px;    /* un tocco estetico */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* ombra delicata */
 }
