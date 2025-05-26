@@ -64,11 +64,17 @@ main {
     max-width: none;
   }
 }
+.video-section {
+  max-width: 960px;      /* stessa max-width del main o simile */
+  margin: 0 auto 20px;   /* centra la sezione e spazio sotto */
+  padding: 0 10px;       /* un po’ di padding ai lati */
+}
+
 .video-section video {
-  width: 100%;
-  max-width: 800px; /* limita la larghezza massima */
-  height: auto;
-  max-height: 60vh;
+  width: 100%;           /* occupa tutta la larghezza disponibile */
+  height: auto;          /* mantiene le proporzioni */
+  max-height: 400px;     /* altezza massima più ragionevole */
   display: block;
-  margin: 0 auto 20px;
+  border-radius: 4px;    /* un tocco estetico */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* ombra delicata */
 }
