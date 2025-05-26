@@ -1,41 +1,38 @@
-/* Reset e base */
+/* Reset base */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body, html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: Arial, sans-serif;
+  margin: 0; padding: 0; overflow-x: hidden; font-family: Arial, sans-serif;
 }
 
 /* Contenitore principale */
 main {
-  max-width: 700px;
+  max-width: 700px; /* container stretto */
   margin: 20px auto;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 /* Sezione video */
 .video-section {
-  margin-bottom: 30px;
   width: 100%;
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 .video-section video {
-  width: 100%;
-  max-width: 700px; /* Mai più largo di main */
+  width: 100%;          /* piena larghezza del container */
+  max-width: 700px;     /* mai più largo di main */
   height: auto;
   max-height: 350px;
+  display: block;
+  margin: 0 auto;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   object-fit: contain;
-  display: inline-block;
 }
 
-/* Sezione portfolio */
+/* Portfolio immagini */
 .portfolio-section {
   display: flex;
   flex-wrap: wrap;
@@ -48,9 +45,9 @@ main {
   max-width: 220px;
   height: auto;
   border-radius: 4px;
+  cursor: pointer;
   transition: transform 0.3s ease;
   object-fit: cover;
-  cursor: pointer;
 }
 
 .portfolio-section img:hover {
